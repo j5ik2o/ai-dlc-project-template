@@ -7,6 +7,8 @@ Matt Pocock の engineering skills は `CLAUDE.md`及び`AGENTS.md` に設定す
 - Issue tracker: GitHub Issues を使う。`docs/agents/issue-tracker.md` があれば詳細を確認する。
 - Triage labels: mattpocock/skills の default labels を使う。`docs/agents/triage-labels.md` があれば詳細を確認する。
 - Domain docs: single-context repo として root `CONTEXT.md` と `docs/adr/` を使う。`docs/agents/domain.md` があれば詳細を確認する。
+- Kiro entrypoint: 新しい要求を Kiro / SDD に渡す場合は、直接 `kiro-discovery` / `kiro-spec-init` に渡さず、`grill-to-kiro` を入口にする。
+- Kiro reconciliation: `.kiro/specs/**` から未登録の用語や ADR 候補を domain docs に戻す場合は、`kiro-to-grill` を入口にする。
 
 ## Project Context Sources
 
